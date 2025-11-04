@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #00cec9;
+    }
+    form {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #00b894;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00cec9;
+    }
+    .link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .link a {
+      color: #74b9ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <form action="/login" method="POST">
+    <h2>Login</h2>
+    <label>Email:</label>
+    <input type="email" name="email" required />
+
+    <label>Password:</label>
+    <input type="password" name="password" required />
+
+    <button type="submit">Login</button>
+    <div class="link">
+      <a href="/">Don’t have an account? Register</a>
+    </div>
+  </form>
+</body>
+</html>
